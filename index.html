@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera | Full-Stack Developer</title>
+    <meta name="description" content="Alex Rivera — full-stack developer crafting fast, accessible web apps, dashboards and digital products with clean code and clean interfaces.">
+
+    <!-- Google Fonts: Fraunces (display) + Plus Jakarta Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER — counts 0% to 100%, then lifts away -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-inner">
+            <p class="preloader-brand">ALEX RIVERA</p>
+            <p class="preloader-count"><span id="loadCount">0</span>%</p>
+            <div class="preloader-bar"><span class="preloader-fill"></span></div>
+            <p class="preloader-note">warming up the portfolio…</p>
+        </div>
+    </div>
+
+    <!-- FLOATING ROUNDED HEADER (stays visible while scrolling through every section) -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="brand-logo">ALEX RIVERA</a>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#home" class="active-link">Home</a>
+                <a href="#work">Case Studies</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Me</a>
+                <a href="#process">Process</a>
+                <a href="#experience">Journey</a>
+            </nav>
+
+            <div class="header-right">
+                <a href="#contact" class="contact-btn">CONTACT</a>
+                <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO CARD (whole page framed like a warm beige poster) -->
+    <main class="hero-card" id="home">
+
+        <!-- GIANT BACKGROUND TITLE -->
+        <h1 class="hero-giant-title">Rivera</h1>
+
+        <!-- CENTER CHARACTER ILLUSTRATION (girl avatar cutout) -->
+        <div class="hero-center-visual">
+            <img src="images/girly.png" alt="Illustration of Alex Rivera holding a laptop and waving hello">
+        </div>
+
+        <!-- FLOATING CIRCULAR TALK BUTTON -->
+        <a href="#contact" class="floating-talk-badge">
+            LET'S<br>TALK
+        </a>
+
+        <!-- BOTTOM GRID CONTENT -->
+        <div class="hero-bottom-grid">
+            <div class="hero-left-desc">
+                <h2>Crafting Immersive Digital Products &amp; Web Experiences.</h2>
+            </div>
+
+            <div class="hero-right-block">
+                <p class="hero-note">
+                    I'm Alex — a full-stack developer &amp; UI engineer. From WordPress
+                    sites to React dashboards, I build fast, accessible web apps that
+                    help startups and creative teams ship with confidence.
+                </p>
+
+                <div class="hero-right-stats">
+                    <div class="stat-box">
+                        <h3>200+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>6+</h3>
+                        <p>Years of Expertise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- SCROLLING TICKER STRIP (section divider ribbon) -->
+    <div class="ticker-strip" aria-hidden="true">
+        <div class="ticker-track">
+            <div class="ticker-group">
+                <span>HTML &amp; CSS</span><i class="tick-dot"></i>
+                <span>JavaScript</span><i class="tick-dot"></i>
+                <span>React JS</span><i class="tick-dot"></i>
+                <span>Bootstrap</span><i class="tick-dot"></i>
+                <span>Node JS</span><i class="tick-dot"></i>
+                <span>MongoDB</span><i class="tick-dot"></i>
+                <span>MySQL</span><i class="tick-dot"></i>
+                <span>WordPress</span><i class="tick-dot"></i>
+                <span>Photoshop</span><i class="tick-dot"></i>
+            </div>
+            <div class="ticker-group">
+                <span>HTML &amp; CSS</span><i class="tick-dot"></i>
+                <span>JavaScript</span><i class="tick-dot"></i>
+                <span>React JS</span><i class="tick-dot"></i>
+                <span>Bootstrap</span><i class="tick-dot"></i>
+                <span>Node JS</span><i class="tick-dot"></i>
+                <span>MongoDB</span><i class="tick-dot"></i>
+                <span>MySQL</span><i class="tick-dot"></i>
+                <span>WordPress</span><i class="tick-dot"></i>
+                <span>Photoshop</span><i class="tick-dot"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE STUDIES / WORK SECTION — the most important proof, right after the hero -->
+    <section class="work-section" id="work">
+        <span class="section-watermark" aria-hidden="true">Work</span>
+
+        <div class="work-inner">
+            <div class="section-head">
+                <p class="section-eyebrow reveal">Case Studies</p>
+                <h3 class="section-heading reveal">Selected <em>work</em> I'm proud of.</h3>
+                <p class="section-sub reveal">Real products for real users — designed, built and shipped end to end.</p>
+            </div>
+
+            <div class="work-grid">
+                <article class="work-card reveal">
+                    <div class="work-thumb">
+                        <img src="images/project-store.png" alt="Velvet &amp; Vine fashion store website homepage">
+                    </div>
+                    <div class="work-body">
+                        <div class="work-meta">
+                            <span class="work-cat">E-Commerce</span>
+                            <span class="work-stack">React JS + Node JS</span>
+                        </div>
+                        <h4>Velvet &amp; Vine — Fashion Store</h4>
+                        <p>A full-featured storefront with cart, smart filters and an admin panel. Product pages load in under a second and the client manages everything without touching code.</p>
+                        <ul class="work-tags">
+                            <li>React JS</li>
+                            <li>Node JS</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="work-card reveal">
+                    <div class="work-thumb">
+                        <img src="images/project-dashboard.png" alt="Pulseboard analytics dashboard interface">
+                    </div>
+                    <div class="work-body">
+                        <div class="work-meta">
+                            <span class="work-cat">SaaS Dashboard</span>
+                            <span class="work-stack">React JS + MySQL</span>
+                        </div>
+                        <h4>Pulseboard — Analytics Dashboard</h4>
+                        <p>Role-based analytics dashboard that turns messy events into clean, readable charts — custom reports, exports and live KPIs for a growing startup.</p>
+                        <ul class="work-tags">
+                            <li>React JS</li>
+                            <li>Bootstrap</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="work-card reveal">
+                    <div class="work-thumb">
+                        <img src="images/project-cafe.png" alt="Chai Tapri cafe website homepage">
+                    </div>
+                    <div class="work-body">
+                        <div class="work-meta">
+                            <span class="work-cat">Business Site</span>
+                            <span class="work-stack">WordPress + Photoshop</span>
+                        </div>
+                        <h4>Chai Tapri — Caf&eacute; Website</h4>
+                        <p>Menu, storytelling and table reservations for a local caf&eacute; — custom theme designed in Photoshop, then built on WordPress so the owner can edit it herself.</p>
+                        <ul class="work-tags">
+                            <li>WordPress</li>
+                            <li>Photoshop</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="work-card reveal">
+                    <div class="work-thumb">
+                        <img src="images/project-fitness.png" alt="FitFlow fitness class booking app interface">
+                    </div>
+                    <div class="work-body">
+                        <div class="work-meta">
+                            <span class="work-cat">Web App</span>
+                            <span class="work-stack">JavaScript + Node JS</span>
+                        </div>
+                        <h4>FitFlow — Class Booking App</h4>
+                        <p>Booking flows for gym classes with waitlists, trainer schedules and payments. Mobile-first, because most members book from their phone between sets.</p>
+                        <ul class="work-tags">
+                            <li>JavaScript</li>
+                            <li>Node JS</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (deep olive band) -->
+    <section class="services-section" id="services">
+        <span class="section-watermark watermark-dark" aria-hidden="true">Services</span>
+
+        <div class="services-inner">
+            <div class="section-head">
+                <p class="section-eyebrow reveal">What I Do</p>
+                <h3 class="section-heading reveal">Services that <em>ship</em>, not just look pretty.</h3>
+                <p class="section-sub reveal">Pick a lane — or hand me the whole journey from idea to launch.</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card service-light reveal">
+                    <span class="service-num">01</span>
+                    <h4>Web App Development</h4>
+                    <p>Custom React JS + Node JS applications — from first sketch to deployed product, with clean, documented code your next developer will thank you for.</p>
+                    <ul class="service-list">
+                        <li>React JS</li>
+                        <li>Node JS</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-num">02</span>
+                    <h4>WordPress Websites</h4>
+                    <p>Fast, editable business sites with custom themes and SEO basics — built so non-technical owners can update everything themselves, zero drama.</p>
+                    <ul class="service-list">
+                        <li>WordPress</li>
+                        <li>Custom Themes</li>
+                        <li>SEO Basics</li>
+                    </ul>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-num">03</span>
+                    <h4>UI Engineering</h4>
+                    <p>Pixel-accurate, responsive interfaces with HTML, CSS, Bootstrap and JavaScript — designs that survive contact with real devices and real users.</p>
+                    <ul class="service-list">
+                        <li>HTML &amp; CSS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-num">04</span>
+                    <h4>Care &amp; Performance</h4>
+                    <p>Speed audits, bug fixes, hosting and maintenance — your site stays fast, secure and up to date long after launch day.</p>
+                    <ul class="service-list">
+                        <li>Speed Audits</li>
+                        <li>MySQL / MongoDB</li>
+                        <li>Maintenance</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION — floating poster portrait + real toolkit -->
+    <section class="about-section" id="about">
+        <span class="about-watermark" aria-hidden="true">About</span>
+
+        <div class="about-inner">
+            <!-- LEFT: cutout illustration, same poster style as the hero -->
+            <div class="about-visual reveal">
+                <img class="about-girl" src="images/p-.png" alt="Illustration of Alex Rivera sitting cross-legged, typing on her laptop">
+                <span class="about-chip chip-a"><span class="chip-dot" aria-hidden="true"></span>6+ Years Experience</span>
+                <span class="about-chip chip-b">200+ Projects</span>
+            </div>
+
+            <!-- RIGHT: story + real toolkit -->
+            <div class="about-content">
+                <p class="about-eyebrow reveal">About Me</p>
+                <h3 class="about-heading reveal">I don't just write code — I <em>design</em>, <em>build</em> &amp; <em>ship</em> the whole thing.</h3>
+                <p class="about-lede reveal">
+                    Hi, I'm Alex — a full-stack developer who's comfortable on every layer:
+                    sketching layouts in Photoshop, styling pages with HTML, CSS &amp; Bootstrap,
+                    building interfaces in React JS, and powering them with Node JS,
+                    MongoDB &amp; MySQL.
+                </p>
+                <p class="about-text reveal">
+                    Over the last 6+ years that toolkit has shipped 200+ projects — WordPress
+                    sites for local businesses, custom React apps for startups, and everything
+                    in between. I sweat the details users actually feel: fast load times,
+                    clean layouts and code the next developer can read like a good story.
+                </p>
+
+                <div class="stack-panel reveal">
+                    <div class="stack-row">
+                        <h4>Frontend</h4>
+                        <ul class="skill-pills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React JS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="stack-row">
+                        <h4>Backend</h4>
+                        <ul class="skill-pills">
+                            <li>Node JS</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="stack-row">
+                        <h4>Design &amp; CMS</h4>
+                        <ul class="skill-pills">
+                            <li>Photoshop</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#contact" class="about-cta reveal">Have a project in mind? Let's build &#8594;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS / HOW I WORK SECTION -->
+    <section class="process-section" id="process">
+        <span class="section-watermark" aria-hidden="true">Process</span>
+
+        <div class="process-inner">
+            <!-- LEFT: story + 4-step panel -->
+            <div class="process-content">
+                <p class="section-eyebrow reveal">How I Work</p>
+                <h3 class="section-heading reveal">From first call to <em>launch day</em> — zero surprises.</h3>
+                <p class="section-sub reveal">A simple four-step process, refined over 200+ projects, that keeps you in the loop from kickoff to handover.</p>
+
+                <div class="process-steps reveal">
+                    <div class="step-row">
+                        <span class="step-num">01</span>
+                        <div class="step-body">
+                            <h4>Discover</h4>
+                            <p>A relaxed call about your goals, users and timeline — then a clear proposal with a fixed scope. No vague estimates, ever.</p>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <span class="step-num">02</span>
+                        <div class="step-body">
+                            <h4>Design</h4>
+                            <p>Wireframes first, then a polished mockup in Photoshop. You see and approve the full look before a single line of code.</p>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <span class="step-num">03</span>
+                        <div class="step-body">
+                            <h4>Build</h4>
+                            <p>Clean, commented code with a preview link every week — you watch the project grow and steer it along the way.</p>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <span class="step-num">04</span>
+                        <div class="step-body">
+                            <h4>Launch &amp; Care</h4>
+                            <p>Deployment, speed tuning and analytics — plus a friendly hand for fixes and updates long after launch day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: presenting pose of the same illustration character -->
+            <div class="process-visual reveal">
+                <img class="process-girl" src="images/p1.png" alt="Illustration of Alex Rivera presenting her working process">
+                <span class="about-chip chip-b">Fixed scope &middot; weekly updates</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE / JOURNEY — milestone chapter cards (no timeline) -->
+    <section class="experience-section" id="experience">
+        <span class="section-watermark" aria-hidden="true">Journey</span>
+
+        <div class="experience-inner">
+            <div class="section-head">
+                <p class="section-eyebrow reveal">My Journey</p>
+                <h3 class="section-heading reveal">Six years of <em>shipping</em> &amp; learning.</h3>
+                <p class="section-sub reveal">From the first HTML tag to full-stack product builds — every chapter added a new layer to the toolkit.</p>
+            </div>
+
+            <div class="journey-grid">
+                <article class="journey-card journey-now reveal">
+                    <div class="journey-top">
+                        <span class="journey-year">2026</span>
+                        <span class="journey-tag">Where I am now</span>
+                    </div>
+                    <h4>Full-Stack Freelancer — 200+ projects</h4>
+                    <p>Running end-to-end product builds for startups and local businesses — the 200+ projects milestone is behind me, and the counter is still spinning.</p>
+                </article>
+
+                <article class="journey-card reveal">
+                    <div class="journey-top">
+                        <span class="journey-year">2023</span>
+                        <span class="journey-tag">The specialist years</span>
+                    </div>
+                    <h4>UI Engineering Focus</h4>
+                    <p>Dashboards and web apps for growing teams — design systems, component thinking and pixel-accurate builds became the daily bread.</p>
+                </article>
+
+                <article class="journey-card reveal">
+                    <div class="journey-top">
+                        <span class="journey-year">2021</span>
+                        <span class="journey-tag">The leap</span>
+                    </div>
+                    <h4>The Full-Stack Leap</h4>
+                    <p>Added Node JS, MongoDB &amp; MySQL to the toolbox — suddenly every frontend could carry a real engine behind it.</p>
+                </article>
+
+                <article class="journey-card reveal">
+                    <div class="journey-top">
+                        <span class="journey-year">2020</span>
+                        <span class="journey-tag">The origin</span>
+                    </div>
+                    <h4>First Lines of Code</h4>
+                    <p>HTML, CSS and a healthy dose of curiosity — first landing pages, first WordPress clients, and the first “wow, it's live!” moment.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS STRIP -->
+    <section class="testi-section" id="testimonials">
+        <div class="testi-inner">
+            <div class="section-head">
+                <p class="section-eyebrow reveal">Kind Words</p>
+                <h3 class="section-heading reveal">People I've <em>built</em> for.</h3>
+            </div>
+
+            <div class="testi-grid">
+                <figure class="testi-card reveal">
+                    <span class="quote-mark" aria-hidden="true">&#8220;</span>
+                    <blockquote>Alex rebuilt our store in six weeks and sales are up 40%. Easily the best money we've spent on the business.</blockquote>
+                    <figcaption>
+                        <strong>Sara Kim</strong>
+                        <span>Founder, Velvet &amp; Vine</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="testi-card reveal">
+                    <span class="quote-mark" aria-hidden="true">&#8220;</span>
+                    <blockquote>A rare mix of design taste and solid engineering. Our dashboard finally feels effortless to use.</blockquote>
+                    <figcaption>
+                        <strong>Daniel Okafor</strong>
+                        <span>Product Lead, Northbeam</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="testi-card reveal">
+                    <span class="quote-mark" aria-hidden="true">&#8220;</span>
+                    <blockquote>She delivered exactly what she promised, on time. Our caf&eacute; reservations doubled in two months.</blockquote>
+                    <figcaption>
+                        <strong>Priya Sharma</strong>
+                        <span>Owner, Chai Tapri</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION — two-tone ticket: olive brief panel + cream poster panel -->
+    <section class="contact-section" id="contact">
+        <div class="contact-card">
+            <div class="contact-brief">
+                <p class="section-eyebrow reveal">Contact</p>
+                <h3 class="contact-heading reveal">Let's build something <em>worth shipping.</em></h3>
+                <p class="contact-sub reveal">Have a project in mind — or a rough idea that needs a developer? Tell me about it. I usually reply within a day.</p>
+
+                <div class="contact-actions reveal">
+                    <a class="contact-mail-btn" href="mailto:hello@alexrivera.dev">hello@alexrivera.dev</a>
+                    <a class="contact-work-link" href="#work">See my case studies &#8594;</a>
+                </div>
+
+                <ul class="contact-facts reveal">
+                    <li>
+                        <strong>Replies</strong>
+                        <span>within 24 hours</span>
+                    </li>
+                    <li>
+                        <strong>Based</strong>
+                        <span>remote — every timezone</span>
+                    </li>
+                    <li>
+                        <strong>Shipped</strong>
+                        <span>200+ projects &amp; counting</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-poster">
+                <span class="contact-watermark" aria-hidden="true">Hello</span>
+                <img class="contact-girl" src="images/p2.png" alt="Illustration of Alex Rivera jumping in celebration">
+                <span class="about-chip chip-a"><span class="chip-dot" aria-hidden="true"></span>Available for new projects</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER — olive bookend: brand / explore / say hello, neatly aligned -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col footer-brand">
+                <p class="footer-logo">ALEX RIVERA<span>.</span></p>
+                <p class="footer-blurb">Full-stack developer crafting fast, accessible web apps, dashboards and WordPress sites — from first sketch to launch day.</p>
+            </div>
+
+            <nav class="footer-col footer-nav" aria-label="Footer navigation">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">Case Studies</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-col footer-hello">
+                <h4>Say Hello</h4>
+                <a class="footer-mail" href="mailto:hello@alexrivera.dev">hello@alexrivera.dev</a>
+                <ul class="footer-socials">
+                    <li><a href="https://github.com" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://dribbble.com" rel="noopener">Dribbble</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            <p>&copy; 2026 Alex Rivera — Designed &amp; built with chai.</p>
+            <a href="#home">Back to top &#8593;</a>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT (minimal) -->
+    <script>
+        // Preloader — counts 0% to 100%, then lifts the curtain and starts hero entrance
+        const preloader = document.getElementById('preloader');
+        const loadCount = document.getElementById('loadCount');
+        let pct = 0;
+        const loading = setInterval(() => {
+            pct = Math.min(100, pct + 5);
+            loadCount.textContent = pct;
+            if (pct === 100) {
+                clearInterval(loading);
+                setTimeout(() => {
+                    preloader.classList.add('done');
+                    document.body.classList.add('loaded');
+                }, 300);
+            }
+        }, 70);
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+
+                // instantly show which section was clicked (scroll spy keeps it in sync after)
+                spyLinks.forEach((other) => other.classList.remove('active-link'));
+                link.classList.add('active-link');
+            });
+        });
+
+        // Scroll spy — highlight the nav link of the section in view
+        const spyLinks = document.querySelectorAll('.nav-links a');
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    spyLinks.forEach((link) => {
+                        link.classList.toggle('active-link', link.getAttribute('href') === '#' + entry.target.id);
+                    });
+                }
+            });
+        }, { rootMargin: '-45% 0px -45% 0px' });
+
+        document.querySelectorAll('main[id], section[id]').forEach((target) => spy.observe(target));
+
+        // Reveal-on-scroll animations
+        const revealer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    revealer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach((el) => revealer.observe(el));
+    </script>
+</body>
+</html>
